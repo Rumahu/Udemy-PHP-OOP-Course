@@ -16,6 +16,23 @@ class Database{
 			die("Database connection failed" . mysqli_error());
 		}		
 	}
+	
+	public function query($sql){
+		$result = mysqli_query($this->connection, $sql);
+		
+		
+		return $result;
+	}
+	
+	private function confirmQuery($result){
+		if(!$result){
+			die("DB Query failed.");
+		}
+	}
+	
+	public function escapeString($string){
+		return mysqli_real_escape_string($this->connection, $string);		
+	}
 
 }
 
