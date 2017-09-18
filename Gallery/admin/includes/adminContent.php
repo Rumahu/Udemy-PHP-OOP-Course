@@ -7,20 +7,12 @@
 				<small>Subheading</small>
 			</h1>
 			
-			<?php
-				/* $sql = "SELECT * FROM users WHERE id=1";
-				$result = $database->query($sql);
-				$user_found = mysqli_fetch_array($result);
-				echo $user_found['username']; */
-				
+			<?php				
 				$result = User::findAllUsers();
 				
-				while($row = mysqli_fetch_array($result)){
-					echo $row['username'] . "<br>";
+				foreach($result as $user){
+					echo $user->username . "<br>";
 				}
-				
-				$idResult = User::findUserById(2);
-				echo "ID FETCH: " . $idResult['username'] . "<br>";
 				
 			?>
 			
