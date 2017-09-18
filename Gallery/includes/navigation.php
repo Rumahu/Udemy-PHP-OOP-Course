@@ -20,7 +20,7 @@
                         <a href="#">Services</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Admin</a>
                     </li>
                 </ul>
             </div>
