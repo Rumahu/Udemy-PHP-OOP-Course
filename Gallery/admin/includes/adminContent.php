@@ -8,12 +8,14 @@
 			</h1>
 			
 			<?php				
-				$result = User::findAllUsers();
+				/* $result = User::findAllUsers();
 				
 				foreach($result as $user){
 					echo $user->username . "<br>";
-				}
+				} */
 				
+				$foundUser = User::findUserById(2);
+				echo($foundUser->username);
 			?>
 			
 			<ol class="breadcrumb">
