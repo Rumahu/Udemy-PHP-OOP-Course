@@ -1,4 +1,4 @@
-<?php include("includes/header.php"); ?>
+<?php include_once("includes/header.php"); ?>
 
 
         <div class="row">
@@ -20,11 +20,11 @@
             <div class="col-md-4">
 
             
-                 <?php include("includes/sidebar.php"); ?>
+                 <?php include_once("includes/sidebar.php"); ?>
 
 
 
         </div>
         <!-- /.row -->
 
-        <?php include("includes/footer.php"); ?>
+        <?php include_once("includes/footer.php"); ?>
